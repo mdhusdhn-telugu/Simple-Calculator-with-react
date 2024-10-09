@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="App-content">
       <div className='App'>
-        <h1> Simple Calculator</h1>
+        <h1>My Calculator</h1>
         <form>
           <input 
             type="text" 
