@@ -38,16 +38,23 @@ form {
   margin: 30px auto;
 }
 
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #aeeeee;
+}
+
 p {
-  color: rgb(185, 246, 3);
+  color: #aeeeee;
   margin: 30px 0;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
 }
 
 input {
   font-size: 1.5rem;
   padding: 0.625rem;
-  border: 2px solid #4CAF50;
+  border: 2px solid #aeeeee;
   border-radius: 50px;
   background-color: #fff;
   color: #333;
@@ -63,7 +70,7 @@ input::placeholder {
 }
 
 input:focus {
-  border-color: #4CAF50;
+  border-color:#aeeeee ;
   box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
   outline: none;
 }
