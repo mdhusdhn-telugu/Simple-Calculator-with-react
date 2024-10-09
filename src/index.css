@@ -1,0 +1,6 @@
+img{
+  width: 800px;
+  height: auto;
+  border-bottom: 4px solid red;
+  border-radius: 50px 10px;
+}
