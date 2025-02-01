@@ -16,7 +16,8 @@ html, body {
   border-bottom: 1px solid black;
   border-radius: 0 0 25% 25%;
   background: rgb(0,10,36);
-  background: linear-gradient(90deg, rgba(0,10,36,1) 0%, rgba(9,68,121,1) 55%, rgba(0,10,36,1) 100%);}
+  background: linear-gradient(90deg, rgba(0,10,36,1) 0%, rgba(9,68,121,1) 55%, rgba(0,10,36,1) 100%);
+}
 
 .App {
   max-width: 600px; 
@@ -27,10 +28,9 @@ html, body {
   border-bottom-right-radius: 33%;
   padding: 50px;
   background: #fffcfc1a;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
-
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
 }
 
 form {
@@ -39,7 +39,7 @@ form {
 }
 
 h1 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #aeeeee;
 }
 
@@ -70,17 +70,16 @@ input::placeholder {
 }
 
 input:focus {
-  border-color:#aeeeee ;
+  border-color: #aeeeee;
   box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
   outline: none;
 }
 
 button {
   font-size: 1.5rem;
-  padding: 0.625rem;
+  padding: 1rem;  
   border-radius: 5px;
   border: 1px solid gray;
-  background: whitesmoke;
   cursor: pointer;
   width: 100%; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -89,6 +88,14 @@ button {
 
 button:hover {
   background-color: beige;
+}
+
+.numerical {
+  background-color: #e0f7fa;  
+}
+
+.function {
+  background-color: #ffe0b2;  
 }
 
 .double-width {
@@ -108,5 +115,15 @@ button:hover {
 @media (min-width: 600px) {
   .button-container {
     grid-template-columns: repeat(5, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  button {
+    font-size: 1.2rem; 
+    padding: 0.75rem; 
   }
 }
